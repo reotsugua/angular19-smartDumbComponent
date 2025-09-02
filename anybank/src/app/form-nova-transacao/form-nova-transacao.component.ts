@@ -13,17 +13,20 @@ export class FormNovaTransacaoComponent {
   tipoTransacao: string = "";
 
   transacaoCriada = output<Transacao>();
-aoSubmeter() {
-  const trasacao = new Transacao(
-    this.tipoTransacao as TipoTransacao,
-    Number(this.valorTransacao)
-  );
+  aoSubmeter() {
+    const trasacao = new Transacao(
+      this.tipoTransacao as TipoTransacao,
+      Number(this.valorTransacao)
+    );
 
-  this.transacaoCriada.emit(trasacao);
+    this.transacaoCriada.emit(trasacao);
+
+    this.valorTransacao = "";
+    this.tipoTransacao = "";
 
 
-  
-}
+
+  }
 
 }
 
