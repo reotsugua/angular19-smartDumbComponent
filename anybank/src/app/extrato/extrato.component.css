@@ -1,6 +1,6 @@
 .extrato {
     border-radius: 0.5rem;
-    background: var(--fundo-cinza-claro, #F5F5F5);
+    background: var(--gradiente-cinza, #F5F5F5);
     padding: 2rem 1.5rem;
     min-height: 100%;
 

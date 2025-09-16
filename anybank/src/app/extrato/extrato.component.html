@@ -2,8 +2,12 @@
     <h2 class="titulo">Extrato</h2>
 
     <ul class="transacoes">
-    <li>
-        <app-trasacao />
-    </li>
+        @for (transacao of transacoes(); track $index){
+            <li>
+                <app-trasacao [transacao]="transacao" />
+            </li>
+        } @empty {
+            <li> Sem itens</li>
+        }
 </ul>
 </aside>
